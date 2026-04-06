@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #fff;
+  background: linear-gradient(to right, #294178, #446baa, #3b82f6);
+ 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  background: #0f172a;
+  color: #fff;
+  padding: 10px;
+
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #0f172a;
+  padding: 10px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: violet;
+  font-size: 14px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+p {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  background: linear-gradient(45deg, #ff6ec4, #7873f5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background-color: #7873f5;
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px #ff6ec4, 0 0 20px #7873f5;
+}
+
+.btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 15px #ff6ec4, 0 0 30px #ff6ec4, 0 0 45px #7873f5;
+}
+
+.btn-div{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  nav ul {
+    gap: 30px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 900px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  nav ul {
+    justify-content: flex-end;
+    padding: 15px 40px;
+  }
+  
+  .card p {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.4s;
+  }
+ 
+}
+
+ @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+
+  }
+
+  .animate {
+    opacity: 0;
+    animation: fadeUp 0.6s ease forwards;
+  }
+
+  .animate {
+    opacity: 0;
+    animation: fadeUp 1s ease forwards;
+  }
+
+  .delay-1 {
+    animation-delay: 0.2s;
+  }
+
+  .delay-2 {
+    animation-delay: 0.4s;
+  }
+
+  .delay-3 {
+    animation-delay: 0.6s;
+  }
+
+  .delay-4 {
+    animation-delay: 0.8s;
+  }
+
+  .Feature{
+    text-align: center;
+    padding-top: 70px;
+    font-size: 25px;
+  }
+
+  .box{
+    border: 1px solid black;
+    width: 7vw;
+    background-color: red;
+    height: 0.5vh;
+    border: none;
+    border-radius: 10px;
+    margin: 3px auto;
+    background: linear-gradient(90deg, #22d3ee, #3b82f6, #a855f7);
+   
+  }
+
+  .card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.card {
+  background: linear-gradient(135deg, #1f1f2e, #2c2c44);
+  padding: 20px;
+  width: 250px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  transition: 0.4s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card i {
+  font-size: 35px;
+  margin-bottom: 10px;
+  color: #00f7ff;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  background: #00f7ff;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background: linear-gradient(135deg, #3b82f6, #22d3ee);
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #22d3ee, 0 0 3px #3b82f6;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px #00f7ff;
+}
+
+.card:hover p {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.card i {
+  transition: 0.5s;
+}
+
+.card:hover i {
+  transform: rotate(360deg) scale(1.2);
+}
+
+.card {
+  transition: all 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 0 20px #00f7ff, 0 0 40px #00f7ff;
+}
+
+
+
+
+
+

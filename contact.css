@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #fff;
+  background: linear-gradient(to right, #294178, #446baa, #3b82f6);
+ 
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+ 
+}
+
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  background: #0f172a;
+  color: #fff;
+  padding: 10px;
+
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #0f172a;
+  padding: 10px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: violet;
+  font-size: 14px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  nav ul {
+    gap: 30px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 900px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  nav ul {
+    justify-content: flex-end;
+    padding: 15px 40px;
+  }
+   
+}
+
+.contact-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* Form Container */
+form {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  width: 320px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding-top: 50px;
+}
+
+/* Inputs & Textarea */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 14px;
+}
+
+/* Placeholder color */
+input::placeholder,
+textarea::placeholder {
+  color: #ddd;
+}
+
+/* Textarea resize */
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #22d3ee, #3b82f6);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Button Hover */
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #22d3ee, 0 0 30px #3b82f6;
+}
+
+/* Focus Effect */
+input:focus, textarea:focus {
+  box-shadow: 0 0 8px #22d3ee;
+}
+
